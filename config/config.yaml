@@ -1,0 +1,13 @@
+mqtt:
+  broker: "127.0.0.1"        # Adresse IP du broker Mosquitto
+  port: 1883
+  username: "simulateur"
+  password: "votre_mot_de_passe"
+  discovery_prefix: "homeassistant"
+
+devices:
+  - id: "prise_virtuelle_1"
+    name: "Prise Test Simulateur"
+    type: "smart_plug"
+    nominal_power: 1500.0     # Puissance consommée à l'état ON (Watts)
+    standby_power: 0.5        # Consommation en veille (Watts)
